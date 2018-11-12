@@ -1,0 +1,13 @@
+<html>
+	<head>
+	</head>
+	<body>
+{{ statistics }}
+
+<form method="POST">
+{% csrf_token %}
+{{ form }}
+<input type="submit" value="Zapisz">
+</form>
+	</body>
+</html>
