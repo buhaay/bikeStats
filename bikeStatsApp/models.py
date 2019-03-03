@@ -7,7 +7,7 @@ class Statistics(models.Model):
 
 	date = models.DateField('Numer tygodnia.')
 	distance = models.DecimalField('Przebyty dystans.', max_digits=5, decimal_places=2)
-	ride_time = models.TimeField('Czas jazdy.')
+	ride_time = models.DurationField('Czas jazdy.')
 	max_speed = models.DecimalField('Maksymalna prędkość', max_digits=3, decimal_places=1)
 	average_speed = models.DecimalField('Średnia prędkość.', max_digits=3, decimal_places=1)
 	calories = models.DecimalField('Kalorie.', max_digits=5, decimal_places=1)
